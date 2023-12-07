@@ -1,7 +1,66 @@
+
+
+#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+   
+}
+
 #campo-minado{
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 500px;
     height: 500px;
-
+    color:blue;
 
 }
+
+.fundacao{
+    display: flex;
+    width: 100%;
+}
+
+.bloco-horizontal{
+    width: 80px;
+    height: 80px;
+    background-image: url("https://www.codeandweb.com/static/334f65090e54b92173e1ef20a0202b96/acb7c/emboss-texture%402x.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:grab
+
+}
+
+#gamerOver{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: none;
+
+}
+
+#gamerOver button{
+    height: 60px;
+    border-radius: 25px;
+    transition: 5s;
+
+}
+
+#gamerOver h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
